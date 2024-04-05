@@ -22,9 +22,9 @@ if (salario >= 0 && salario <= 2000) {
   imposto = (salario - 2000) * 0.08;
   console.log("R$ " + imposto.toFixed(2));
 } else if (salario > 3000 && salario <= 4500) {
-  imposto = (salario - 3000) * 0.18 + 80;
+  imposto = (salario - 3000) * 0.18 + 1000 * 0.08;
   console.log("R$ " + imposto.toFixed(2));
 } else {
-  imposto = (salario - 4500) * 0.28 + 350;
+  imposto = (salario - 4500) * 0.28 + 1000 * 0.08 + 1500 * 0.18;
   console.log("R$ " + imposto.toFixed(2));
 }
